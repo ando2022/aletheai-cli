@@ -1,4 +1,3 @@
-# aletheai-cli
 # AletheAi CSR Evaluator
 
 **AletheAi CSR Evaluator** is a command-line tool for automated analysis and summarization of Corporate Social Responsibility (CSR) reports.  
@@ -58,3 +57,82 @@ Tags are assigned using a rule-based method (regex + keyword matching), without 
 
    ```bash
    export OPENAI_API_KEY=sk-...
+
+
+⸻
+
+▶️ Usage
+
+From your terminal, run:
+
+./aletheai
+
+The tool will:
+	•	Process all PDFs in the input folder
+	•	Extract and tag sentence-level content
+	•	Generate statistics and semantic summaries
+
+Outputs are saved in the locations specified in your config.
+
+⸻
+
+📂 Output
+	•	*.csv: Tag and ESG dimension counts per report.
+	•	*.json: GPT-based summaries of ESG themes and structural tags.
+	•	runtime.yaml: Shows pipeline execution time.
+	•	user_feedback.txt: Saved only if feedback is provided after a run.
+
+⸻
+
+💬 Feedback
+
+After each run, you’ll be asked to leave feedback.
+It is saved locally in user_feedback.txt in the working directory.
+
+To share your thoughts, email this file to:
+📩 info@aletheai.ch
+
+⸻
+
+❓ FAQ
+
+Q: What platforms are supported?
+A: Currently macOS (Apple Silicon). Windows/Linux coming soon.
+
+Q: Do I need Python installed?
+A: No. The tool runs as a standalone binary.
+
+Q: I get “permission denied” — what now?
+A: Make the binary executable:
+
+chmod +x aletheai
+
+Q: Where do I put my input files and config?
+A: Match the structure described in your YAML config file.
+
+Q: Where can I get an OpenAI API key?
+A: Sign up at OpenAI
+
+Q: Where is the output stored?
+A: Output paths are defined in your config.yaml.
+
+Q: How can I request a feature or report a bug?
+A: Email your feedback file or contact us directly.
+
+⸻
+
+📬 Contact
+
+Ana Dobson
+📧 anbo.do@icloud.com
+🌐 LinkedIn :https://www.linkedin.com/in/ana-dobson-a9295745/
+
+⸻
+
+📄 License
+
+This software is provided in compiled form only.
+You may use it for personal, educational, or evaluation purposes.
+Commercial use, redistribution, reverse engineering, or modification is prohibited without written permission.
+
+By using this software, you agree to these terms.
